@@ -1,0 +1,85 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Manrope', sans-serif;
+}
+html{
+	height: 100%;
+}
+body{
+	min-height: 100%;
+	background-color: hsl(218, 23%, 16%);
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+.main{
+	margin-top: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.advice{
+	background-color: hsl(217, 19%, 24%);
+	max-width: 375px;
+	border-radius: 8px;
+	padding: 40px 10px;
+	display: flex;
+	margin: 15px;
+	flex-direction: column;
+	align-items: center;
+	position: relative;
+}
+.advice__id{
+	color: hsl(150, 100%, 66%);
+	font-size: .6em;
+	letter-spacing: 5px;
+}
+.advice__text{
+	color: hsl(193, 38%, 86%);
+	font-size: 1.3em;
+	font-weight: 800;
+	text-align: center;
+	margin: 25px 0;
+}
+.advice__image{
+	max-width: 100%;
+}
+.advice__text::before{content: "\201C";}
+.advice__text::after{content: "\201D";}
+.advice__text__container{
+	width: 95%;
+	position: relative;
+}
+.advice__button{
+	position: absolute;
+	border: 0;
+	background-color: hsl(150, 100%, 66%);
+	padding: 15px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 100%;
+	bottom: -25px;
+}
+.advice__button:hover, .advice__button:active{
+	box-shadow: 0 0 25px 1px hsl(150, 100%, 66%);
+}
+.advice__button > img{
+	width: 18px;
+}
+.attribution { 
+	font-size: 11px; 
+	text-align: center; 
+	color: rgb(255,255,255); 
+	margin-top: auto;
+}
+.attribution a { 
+	color: rgb(200,200,200);
+}
+a{
+	text-decoration: none;
+}
+img{
+	display: block;
+}
